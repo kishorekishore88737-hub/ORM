@@ -23,7 +23,8 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-admin.py```
+```
+admin.py
 
 from django.contrib import admin
 from .models import Car,CarAdmin
@@ -41,12 +42,12 @@ class  Car(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
 class CarAdmin(admin.ModelAdmin):
     list_display = ('name', 'model', 'year', 'price')
-```
 
+```
 
 ## OUTPUT
 
-![alt text](<myproject/Screenshot 2026-11-24 145909.png>)
+![alt text](<Screenshot 2026-11-24 145909.png>)
 
 
 ## RESULT
